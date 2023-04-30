@@ -9,9 +9,9 @@ class ImSelect < Formula
   license "MIT"
 
   if Hardware::CPU.arm?
-    url "https://github.com/daipeihust/im-select/blob/master/macOS/out/apple/im-select"
+    url "https://github.com/daipeihust/im-select/raw/master/macOS/out/apple/im-select"
   else
-    url "https://github.com/daipeihust/im-select/blob/master/macOS/out/intel/im-select"
+    url "https://github.com/daipeihust/im-select/raw/master/macOS/out/intel/im-select"
   end
 
 
