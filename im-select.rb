@@ -4,10 +4,16 @@
 class ImSelect < Formula
   desc "Switch your input method through terminal"
   homepage "https://github.com/daipeihust/im-select"
-  url "https://github.com/daipeihust/im-select/raw/master/im-select-mac/out/intel/im-select"
   version "1.0.1"
   sha256 ""
   license "MIT"
+
+  if Hardware::CPU.arm?
+    url "https://raw.githubusercontent.com/daipeihust/im-select/master/macOS/out/apple/im-select"
+  else
+    url "https://raw.githubusercontent.com/daipeihust/im-select/master/macOS/out/intel/im-select"
+  end
+
 
   # depends_on "cmake" => :build
 
